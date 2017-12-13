@@ -14,13 +14,13 @@ import generic.IAutoConstants;
 
 public class EnterTimeTrackPage implements IAutoConstants {
 	
-	@FindBy(xpath="//div[contains(.,'Help')]")
+	@FindBy(xpath="//div[contains(text(),'Help')]")
 	private WebElement help;
 	
 	@FindBy(linkText="About your actiTIME")
 	private WebElement aboutActiTIME;
 	
-	@FindBy(xpath="//span[contains(.,'actiTIME')]")
+	@FindBy(xpath="//span[starts-with(.,'actiTIME')]")
 	private WebElement productVersion;
 	
 	@FindBy(id="aboutPopupCloseButtonId")
